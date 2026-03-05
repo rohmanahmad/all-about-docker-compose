@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="A comprehensive guide to Docker Compose, covering installation, configuration, and best practices for managing multi-container Docker applications." /><link rel="canonical" href="https://compose.rohman.web.id/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>All About Docker Compose</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> All About Docker Compose
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Samples</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Databases</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="databases/mysql/standard/">Mysql</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="databases/redis/standard/">Redis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="databases/mariadb/standard/">Mariadb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="databases/postgresql/standard/">Postgresql</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="databases/mongodb/standard/">MongoDB</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Storage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="storage/minio/standard/">Minio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Servers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="webservers/nginx/standard/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="webservers/apache/standard/">Apache</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Technology</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="technology/nodejs/standard/">Nodejs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="technology/php/standard/">PHP</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="technology/python/standard/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="technology/golang/standard/">Golang</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="frameworks/adonisjs/standard/">Adonis Js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="frameworks/reactjs/standard/">React Js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="frameworks/vuejs/standard/">Vue Js</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">All About Docker Compose</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/rohmanahmad/all-about-docker-compose/edit/master/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="welcome-to-all-about-docker-compose">Welcome to All About Docker Compose<a class="headerlink" href="#welcome-to-all-about-docker-compose" title="Permanent link">&para;</a></h1>
+<p>This site is a comprehensive guide to Docker Compose, covering installation, configuration, best practices, troubleshooting, and resources for managing multi-container Docker applications.</p>
+<h1 id="nginx-api-key-and-bearer-token-authentication-example">Nginx API Key and Bearer Token Authentication Example<a class="headerlink" href="#nginx-api-key-and-bearer-token-authentication-example" title="Permanent link">&para;</a></h1>
+<p>This configuration demonstrates how to secure an Nginx reverse proxy using both X-API-KEY and Authorization: Bearer token headers, with dynamic token management via a map file.</p>
+<h2 id="example-nginxconf">Example nginx.conf<a class="headerlink" href="#example-nginxconf" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code class="language-nginx">events {}
+http {
+    # Validate X-API-KEY header
+    map $http_x_api_key $api_key_valid {
+        default 0;
+        include /etc/nginx/api_key.map;
+    }
+
+    # Validate Authorization: Bearer &lt;token&gt; header
+    map $http_authorization $bearer_token_raw {
+        default &quot;&quot;;
+        ~^Bearer\ (?&lt;bearer&gt;[A-Za-z0-9]+)$ $bearer;
+    }
+
+    # Map valid Bearer tokens (same as API key map)
+    map $bearer_token_raw $bearer_valid {
+        default 0;
+        include /etc/nginx/api_key.map;
+    }
+
+    server {
+        listen 8080;
+
+        location / {
+            set $auth_valid 0;
+            if ($api_key_valid = 1) {
+                set $auth_valid 1;
+            }
+            if ($bearer_valid = 1) {
+                set $auth_valid 1;
+            }
+            if ($auth_valid = 0) {
+                return 401 &quot;Unauthorized: Invalid API Key or Bearer token\n&quot;;
+            }
+            # proxy_pass http://ollama:11434;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Add valid API keys or Bearer tokens to <code>/etc/nginx/api_key.map</code> in the format:
+  <code>&lt;token&gt; 1;</code></li>
+<li>Requests must include either <code>X-API-KEY</code> or <code>Authorization: Bearer &lt;token&gt;</code> header matching a value in the map file.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="databases/mysql/standard/" class="btn btn-neutral float-right" title="Mysql">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/rohmanahmad/all-about-docker-compose" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+      <span><a href="databases/mysql/standard/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2026-03-05 10:45:07.551534+00:00
+-->
