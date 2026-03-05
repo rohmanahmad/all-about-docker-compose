@@ -1,0 +1,1 @@
+## Mongodb Standard Configuration

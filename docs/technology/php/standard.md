@@ -1,0 +1,1 @@
+## PHP Standard Configuration

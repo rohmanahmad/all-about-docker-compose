@@ -1,0 +1,45 @@
+site_name: All About Docker Compose
+site_description: A comprehensive guide to Docker Compose, covering installation, configuration, and best practices for managing multi-container Docker applications.
+site_url: https://compose.rohman.web.id
+repo_url: https://github.com/rohmanahmad/all-about-docker-compose
+site_dir: build
+docs_dir: docs
+theme:
+  name: readthedocs
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.integrated
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+nav:
+  - Home: index.md
+  - Samples:
+    - Databases:
+      - Mysql: databases/mysql/standard.md
+      - Redis: databases/redis/standard.md
+      - Mariadb: databases/mariadb/standard.md
+      - Postgresql: databases/postgresql/standard.md
+      - MongoDB: databases/mongodb/standard.md
+    - Storage:
+      - Minio: storage/minio/standard.md
+    - Web Servers:
+      - Nginx: webservers/nginx/standard.md
+      - Apache: webservers/apache/standard.md
+    - Technology:
+      - Nodejs: technology/nodejs/standard.md
+      - PHP: technology/php/standard.md
+      - Python: technology/python/standard.md
+      - Golang: technology/golang/standard.md
+    - Frameworks:
+      - Adonis Js: frameworks/adonisjs/standard.md
+      - React Js: frameworks/reactjs/standard.md
+      - Vue Js: frameworks/vuejs/standard.md
